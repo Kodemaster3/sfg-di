@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class MyController {
-    
     public String seyHello() {
         System.out.println("Hello man!!");
         

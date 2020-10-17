@@ -13,11 +13,8 @@ public class SfgDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(SfgDiApplication.class, args);
-		
 		MyController myController = (MyController) applicationContext.getBean("myController");
-		
 		String greet = myController.seyHello();
-		
 		System.out.println(greet);
 		
 		System.out.println("------- Property");
