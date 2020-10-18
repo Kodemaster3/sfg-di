@@ -11,6 +11,10 @@ public class SfgDiApplication {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(SfgDiApplication.class, args);
 		
+		System.out.println("---- The Best Pet is ----");
+		PetController petController = (PetController) applicationContext.getBean("petController");
+		System.out.println(petController.whichPetIsTheBest());
+		
 		I18nController i18nController = (I18nController) applicationContext.getBean("i18nController");
 		System.out.println(i18nController.seyHello());
 		
